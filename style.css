@@ -1,0 +1,162 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Variables */
+:root {
+    --bg-color: #fff;
+    --header-details-color: #666;
+
+    --btn-padding: .7rem;
+    --btn-margin: .7rem;
+    --btn-color: #ebeef1;
+    --btn-color-shadow: #bbbbc0;
+    --btn-text-color: #000;
+    --btn-icon-margin-left: 5px;
+}
+
+/* Global */
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+body, html {
+    background-color: var(--bg-color);
+    margin-top: 1rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header .pfp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: #89b0fd solid 2px;
+}
+
+.header .heading {
+    font-family: "Open Sans", "Roboto", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2rem;
+}
+
+.header .details {
+    font-family: "Open Sans", "Roboto", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: var(--header-details-color);
+    margin: auto;
+}
+
+.header .details a {
+    color: var(--header-details-color);
+    text-decoration: none;
+}
+
+/* Main */
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons button {
+    background-color: var(--btn-color);
+    outline: none;
+    border: none;
+    box-shadow: var(--btn-color-shadow) 1px 1px 1px 1px;
+    border-radius: 10px;
+    transition: all .2s ease-in;
+    margin-top: var(--btn-margin);
+    padding-top: var(--btn-padding);
+    padding-bottom: var(--btn-padding);
+    width: 50%;
+    display: flex;
+    position: relative;
+    color: var(--btn-text-color);
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    box-shadow: var(--btn-color-shadow) 2px 2px 2px 2px;
+}
+
+.buttons button .icon {
+    height: 25px;
+    width: 25px;
+    margin-left: var(--btn-icon-margin-left);
+    /*align-content: flex-start;*/
+}
+
+.buttons button .content {
+    height: 100%;
+    width: 100%;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    justify-content: center;
+    align-items: center;
+    /*align-content: center;*/
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Multi-Device support */
+/* https://stackoverflow.com/a/7354648 */
+@media (max-width: 480px) {
+    .buttons button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+    .buttons button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .buttons button {
+        width: 85%;
+    }
+}
+
+@media (min-width:961px) and (max-width: 1024px) {
+    .buttons button {
+        width: 80%;
+    }
+}
+
+@media (min-width:1025px) and (max-width: 1281px) {
+    .buttons button {
+        width: 50%;
+    }
+}
+
+@media (min-width:1281px) {
+    .buttons button {
+        width: 40%;
+    }
+}
