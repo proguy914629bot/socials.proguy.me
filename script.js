@@ -58,6 +58,8 @@ function modifyHeaders(data) {
     heading.innerText = hData.heading;
     email.href = `mailto:${hData.email}`;
     email.innerText = hData.email;
+
+    document.title = hData.heading;
 }
 
 async function initialize() {
