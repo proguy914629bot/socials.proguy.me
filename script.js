@@ -1,4 +1,4 @@
-const socials_url = 'socials.json';  // TODO: change this
+const socials_url = 'https://socials-cdn.proguy.me/socials.json';
 const socials = document.querySelector(".buttons");
 const header = document.querySelector(".header");
 
