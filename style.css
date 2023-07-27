@@ -4,14 +4,15 @@
 
 /* Variables */
 :root {
-    --bg-color: #fff;
+    --bg-color: #F2F2F4;
     --header-details-color: #666;
 
     --btn-padding: .7rem;
     --btn-margin: .7rem;
     --btn-color: #ebeef1;
     --btn-color-shadow: #bbbbc0;
-    --btn-text-color: #000;
+    --btn-text-color: #1D1D1F;
+    --general-text-color: #1D1D1F;
     --btn-icon-margin-left: 5px;
 }
 
@@ -19,6 +20,7 @@
 * {
     box-sizing: border-box;
     font-family: "Roboto", "Open Sans", sans-serif;
+    color: var(--general-text-color);
 }
 
 body, html {
