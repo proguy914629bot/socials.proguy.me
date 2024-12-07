@@ -21,13 +21,13 @@
     box-sizing: border-box;
     font-family: "Roboto", "Open Sans", sans-serif;
     color: var(--general-text-color);
-    cursor: default;
-    user-select: none;
 }
 
 body, html {
     background-color: var(--bg-color);
     margin-top: 1rem;
+    cursor: default;
+    user-select: none;
 }
 
 /* Header */
