@@ -21,7 +21,7 @@
     box-sizing: border-box;
     font-family: "Roboto", "Open Sans", sans-serif;
     color: var(--general-text-color);
-    cursor: none;
+    cursor: default;
     user-select: none;
 }
 
