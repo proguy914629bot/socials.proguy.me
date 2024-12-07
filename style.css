@@ -21,6 +21,8 @@
     box-sizing: border-box;
     font-family: "Roboto", "Open Sans", sans-serif;
     color: var(--general-text-color);
+    cursor: none;
+    user-select: none;
 }
 
 body, html {
@@ -61,6 +63,7 @@ body, html {
 .header .details a {
     color: var(--header-details-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Main */
