@@ -72,14 +72,22 @@ function initializeSocials(data) {
 
 function modifyHeaders(data) {
     const hData = data.header;
+    const emails = data.mail;
     let pfp = document.querySelector(".profile .pfp");
     let heading = header.querySelector(".heading");
     let email = header.querySelector(".details #email");
+    let hn = window.location.hostname;
 
     pfp.src = hData.pfp;
     heading.innerText = hData.heading;
-    email.href = `mailto:${hData.email}`;
-    email.innerText = hData.email;
+
+    if (emails[hn]) {
+        email.href = `mailto:${emails[hn]}`;
+        email.innerText = emails[hn];
+    } else {
+        email.href = `mailto:${hData.email}`;
+        email.innerText = hData.email;
+    }
 
     document.title = hData.heading;
 }
