@@ -28,6 +28,7 @@ html, body {
     font-family: var(--sans);
     cursor: default;
     user-select: none;
+    -webkit-user-select: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
